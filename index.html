@@ -45,6 +45,15 @@
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
+<style>
+	.about-grids{
+		justify-content: center;
+	}
+	.tab-content{
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
 </head>
 <body>
 	<!-- banner -->
@@ -62,7 +71,7 @@
 								<span class="icon-bar"></span>
 							</button>
 							<div class="agileits-logo">
-								<h1><a href="index.html"><img src="images/logo1.jpeg" alt="" /> horizon 2020
+								<h1><a href="/"><img src="images/logo1.jpeg" alt="" /> horizon 2020
                                     </a></h1>
 							</div>
 						</div>
@@ -71,13 +80,12 @@
 						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 							<nav>
 								<ul class="nav navbar-nav">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="#about" class="scroll">Workshop</a></li>
-									<li><a href="#events" class="scroll">Events</a></li>
-									<li><a href="#team" class="scroll">Team</a></li>
-									
+									<li><a href="/">Home</a></li>
+									<li><a href="/#workshops" class="scroll">Workshop</a></li>
+									<li><a href="/#events" class="scroll">Events</a></li>
+									<li><a href="/#team" class="scroll">Team</a></li>
 									<li><a href="#mail" class="scroll">Mail Us</a></li>
-                                    <li class="active"><a href="register.html" class="scroll">Register</a></li>
+                                    <li class="active"><a href="/register.html">Register</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -90,7 +98,7 @@
                     <img src="images/horwhite.png" alt=" " class="img-responsive" />
 					
 					<div class="w3-arrow bounce animated">
-						<a href="#indro" class="scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<a href="#intro" class="scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
 					</div>
 				</div>
 			</div>
@@ -98,7 +106,7 @@
 	</div>
 	<!-- //banner -->
 	<!-- introduction -->
-	<div class="introduction" id="indro">
+	<div class="introduction" id="intro">
 		<div class="container">
 			<div class="w3l-heading">
 				<h3>Introduction</h3>
@@ -113,7 +121,7 @@
 	</div>
 	<!-- //introduction -->
 	<!-- about -->
-	<div class="about" id="about">
+	<div class="about" id="workshops">
 		<div class="container">
 			<div class="w3l-heading about-heading">
 				<h3>Workshop</h3>
@@ -860,32 +868,32 @@
 		<div class="col-md-8 contact-form-right">
 			<h5>Contact Form</h5>
 			<div class="contact-form-grid">
-				<form action="#" method="post">
+				<form action="/mailus.php" method="post">
 					<div class="fields-grid">
 						<div class="styled-input agile-styled-input-top">
-							<input type="text" name="Full Name" required="">
+							<input type="text" name="name" required="">
 							<label>Full Name</label>
 							<span></span>
 						</div>
 						<div class="styled-input agile-styled-input-top">
-							<input type="text" name="Phone" required=""> 
+							<input type="text" name="phone" required=""> 
 							<label>Phone</label>
 							<span></span>
 						</div>
 						<div class="styled-input">
-							<input type="email" name="Email" required=""> 
+							<input type="email" name="email" required=""> 
 							<label>Email</label>
 							<span></span>
 						</div> 
 						<div class="styled-input">
-							<input type="text" name="Subject" required="">
+							<input type="text" name="subject" required="">
 							<label>Subject</label>
 							<span></span>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="styled-input textarea-grid">
-						<textarea name="Message" required=""></textarea>
+						<textarea name="message" required=""></textarea>
 						<label>Message</label>
 						<span></span>
 					</div>	 
@@ -898,8 +906,8 @@
 	<!-- //contact -->
 	<!-- footer -->
 	<footer>
-		<div class="container">
-			<p>© BCREC HORIZON 2020 . All Rights Reserved | Design by <a href="https://www.facebook.com/eviil.lennard"> Chandan Gorai</a> and<a href="https://www.facebook.com/shivamkrch"> Shivam Kumar</a></p>
+		<div class="container py-4">
+			<p>© BCREC HORIZON 2020 . All Rights Reserved | Designed and Developed by <a href="https://www.facebook.com/eviil.lennard"> Chandan Gorai</a> and<a href="https://www.linkedin.com/in/shivamkrch"> Shivam Kumar</a></p>
 		</div>
 	</footer>
 	<!-- //footer -->
