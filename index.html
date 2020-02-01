@@ -53,6 +53,77 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.introduction-info p{
+		font-size: 1rem;
+		color: black;
+	}
+	.person {
+  position: relative;
+  background-size: cover !important;
+  padding-top: 41.666%;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.4s ease;
+  border: #dededf solid 2.5px;
+}
+
+.person .person-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  transition: 0.7s ease;
+  opacity: 0;
+  padding: 0.3rem;
+  padding-top: 42%;
+}
+
+.person:hover .person-details {
+  opacity: 1;
+}
+
+.text-warning{
+	color: #faa108;
+}
+
+@media screen and (min-width: 768px) {
+  .person {
+    padding-top: 41.666%;
+  }
+  .person-details h5{
+	  font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .person {
+    padding-top: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .person {
+    padding-top: 17%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .person-details {
+    padding-top: 41.66% !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .person-details h5 {
+    font-size: 5vw !important;
+  }
+  .person-details p {
+    font-size: 4vw !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -169,7 +240,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	<!-- </div> -->
 	<!-- //about -->
 	<!-- gallery -->
 	<div class="gallery" id="events">
@@ -742,8 +813,8 @@
 						<div class="team-info">
 							<img src="images/22-min.jpg" alt="" />
 							<div class="team-caption"> 
-								<h4>Justo congue</h4>
-								<p>Fusce laoreet</p>
+								<h4>Raj Roy</h4>
+								<p>Civil Department</p>
 								<ul>
 									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -774,6 +845,34 @@
 								<p>CSE Department</p>
 								<ul>
 									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+                    <div class="col-md-3 agileits-team-grid">
+						<div class="team-info">
+							<img src="images/26-min.jpeg" alt="" />
+							<div class="team-caption"> 
+								<h4>Prakash Pinto</h4>
+								<p>Mechanical Department</p>
+								<ul>
+									<li><a href="https://www.facebook.com/prakash.pinto.125 "><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+                    <div class="col-md-3 agileits-team-grid">
+						<div class="team-info">
+							<img src="images/27-min.jpeg" alt="" />
+							<div class="team-caption"> 
+								<h4>Pratik Choudhary</h4>
+								<p>Mechanical Department</p>
+								<ul>
+									<li><a href="https://www.facebook.com/pratik.j.choudhary"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fa fa-rss"></i></a></li>
 								</ul>
@@ -819,12 +918,68 @@
 	<div class="contact" id="mail">
 		<div class="container">
 			<div class="w3l-heading about-heading">
-				<h3>TEch Team</h3>
+				<h3>Tech Team</h3>
 				<div class="w3ls-border about-border"> </div>
 			</div>
             
-			<div class="introduction-info contact-info">
-				<p>Chandan Gorai, Shivam Kumar, Shaunak, Sweta Verma, Soumik </p>
+			<div class="container pt-5 px-4">
+				<div class="row">
+					<div
+						class="person col-4 mx-2 my-3 col-xs-5 col-sm-5 col-md-3 col-lg-2"
+						style="background: url(/images/shivam.jpeg);"
+					>
+						<a href="https://linkedin.com/in/shivamkrch" target="_blank" rel="noopener noreferrer">
+						<div class="person-details text-center">
+							<h5 class="person-name text-light mb-0">Shivam Kumar</h5>
+							<p class="person-text text-warning mb-1">4th Year, CSE</p>
+						</div>
+						</a>
+					</div>
+					<div
+						class="person col-4 mx-2 my-3 col-xs-5 col-sm-5 col-md-3 col-lg-2"
+						style="background: url(/images/1-min.jpg);"
+					>
+						<a href="#" target="_blank" rel="noopener noreferrer">
+						<div class="person-details text-center">
+							<h5 class="person-name text-light mb-0">Chandan Gorai</h5>
+							<p class="person-text text-warning mb-1">4th Year, CSE</p>
+						</div>
+						</a>
+					</div>
+					<div
+						class="person col-4 mx-2 my-3 col-xs-5 col-sm-5 col-md-3 col-lg-2"
+						style="background: url(/images/shoumik.jpeg);"
+					>
+						<a href="#" target="_blank" rel="noopener noreferrer">
+						<div class="person-details text-center">
+							<h5 class="person-name text-light mb-0">Shoumik Roy</h5>
+							<p class="person-text text-warning mb-1">2nd Year, CSE</p>
+						</div>
+						</a>
+					</div>
+					<div
+					class="person col-4 mx-2 my-3 col-xs-5 col-sm-5 col-md-3 col-lg-2"
+						style="background: url(/images/shweta.jpg);"
+					>
+					<a href="#" target="_blank" rel="noopener noreferrer">
+						<div class="person-details text-center">
+							<h5 class="person-name text-light mb-0">Shweta Verma</h5>
+							<p class="person-text text-warning mb-1">2nd Year, CSE</p>
+						</div>
+					</a>
+				</div>
+				<div
+					class="person col-4 mx-2 my-3 col-xs-5 col-sm-5 col-md-3 col-lg-2"
+					style="background: url(/images/shounak.jpeg);"
+				>
+					<a href="#" target="_blank" rel="noopener noreferrer">
+					<div class="person-details text-center">
+						<h5 class="person-name text-light mb-0">Shounak Banerjee</h5>
+						<p class="person-text text-warning mb-1">1st Year, IT</p>
+					</div>
+					</a>
+				</div>
+				</div>
 			</div>
 		</div>
 	</div>
